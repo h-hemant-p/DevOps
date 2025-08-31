@@ -1,0 +1,369 @@
+-----------------------------------------------April-14 Git PCP day-1-----------------------------------------
+
+Linux basics commands -->
+
+1.mkdir --> This command will help us to create a directory.
+
+Syntax --> mkdir <yourdirectoryname>
+
+example --> mkdir newfolkder
+
+2. ls --> This command will help you to list all the files as well as directories available.
+
+example --> ls
+
+2.1 ls -a --> This command is similar to ls but -a will list the hidden folders or files as well.
+
+example --> ls -a here -a is a flag for all the files.
+
+3. cd --> This command will help us to change from one directory to another.
+
+ syntax --> cd <directoryName>
+
+ example --> cd desktop
+
+ example --> cd documents
+
+3.1 cd ..  --> This command will help us to get back one directory.
+
+ example --> cd ..
+
+ques --> There are total 5 directories one inside the other ?
+
+Ans --> here simply we will be using cd
+
+4 rmdir --> This command will help us to delete a particular directory.
+
+ syntax --> rmdir <directoryName>
+
+ example --> rmdir newfolder2
+
+5. pwd --> This command will show us the exact path where we are currently working.pwd stands for present
+   working directory.
+
+example --> pwd 
+
+6. touch --> This command will help us to create an empty file.
+
+ syntax --> touch <fileName>
+
+ example --> touch file1.txt
+
+7. cat --> This command will help us to see the content inside any particular file.
+
+ syntax --> cat <YourfileName>
+
+ example --> cat file1.txt
+
+---------------------------------------------- April-15 Git PCP day-2-----------------------------------
+
+8.How to create text based files ?
+
+ There are multiple ways to create text based files.
+
+8.1 nano editor--> nano is basically a linux based editor with the help of which we can create,modify and
+    update text files.
+
+  syntax --> nano <YourFileName>
+
+  example --> nano file2.txt
+
+# how to save and exit from nano editor -->
+ 
+ To save --> ctrl + s
+ To exit --> ctrl + x
+
+8.2 vi editor --> vi is another type of editor available with the help of which we can edit the files.
+
+ Syntax --> vi <fileName>
+
+ example --> vi demo.txt
+
+# how to go & exit from the insert mode in vi editor-->
+
+ To insert --> I
+ To  exit from insert mode --> Esc
+
+# How to save and quit from vi editor-->
+  :wq --> here w is to write/save the data and q means to quit from the editor.
+
+9. echo --> This command is used for multiple purposes basically we can print the exact data as well as
+ we can create text based files with this command.
+
+ syntax --> echo "string..." 
+
+ example --> echo 'hello everyone'
+
+9.1 how to create empty/ text files with echo command-->
+
+   example --> echo "" > newfile.txt  (This will create an empty file)
+   
+   example --> echo "This is a text file" > demo2.txt
+
+
+Git and Github basics + Theory -->
+
+1. What is git ?
+
+* VCS -> it stands for version control system and it is a tool that will help the developers to manage
+ the changes in the source code of the project over the period of time.
+
+* With the help of VCS we can track the changes(previous versions) in the source code.
+
+* With the help of VCS we can easily share our source code with annyone.
+
+* With the help of VCS tools we can work collaborativly.
+
+* VCS track modifications or updatiosn and it also provide the history of previous versions.
+
+2. Types of VCS --> 
+
+2.1 Local version control system (LVCS) -->
+
+ # This kind of VCS will store the changs on a local machine.
+
+ example --> RCS ( revision control system)
+
+2.2 centralized version control system (CVCS)-->
+
+* In this type of VCS all the files or data is stored inside a ceantral server.
+
+* developers need active internet in order to access the data from the centralized server.
+
+2.3 Distibuted version conbtrol system (DVCS) -->
+
+* In DVCS every developer has a full copy of the repository.
+
+* In this kind of version control system it allows the developers to work in offline mode.
+
+# this kind of vcs provides better backup options.
+
+Example --> git, Mercurial
+
+3. features of git-->
+
+3.1 fast & lightweight -->
+
+# git is a light weight and easy to use tool as it provides high performance.
+
+3.2 Collaboration -->
+
+# Git helps us to collaborate with other developers as well.
+
+3.3 OpenSource -->
+
+# this tool is one source which means we can use it free of cost.
+
+3.4 Branching & Merging -->
+
+* This is an essential and important feature of git.
+
+* This feature of git will allow us to work on differnt features and finally we can merge them into the master/
+  main branch.
+
+
+
+------------------------------------------------April-16 Git PCP day-3----------------------------------------
+
+Git commands -->
+
+1. git init --> This is the first command we need to execute before executing other commands of git.This 
+   command will eventually start the git.
+
+ syntax --> git init.
+
+2. git status --> This command will display you how many files are present inside the untracked area.
+
+ syntax --> git status
+
+3. git add <fileName> --> This command will help us to add the file into the staging area and once the file is added to 
+   staging area then only we can commit that file.
+
+  Syntax --> git add <FileName>   (This command will used if we want to stage a single file)
+
+  example --> git add newfile.txt
+
+3.1 git add . --> This command will help us to add multiple files into the staging area on the same time.
+
+   Syntax --> git add .
+
+4. git commit -m "your commit message" --> This command will help us to save the changes that we have made 
+   inside the files.
+  
+   syntax --> git commit -m "Commit message"
+   
+   example --> git commit -m "I have commited 5 files"
+
+5. git config --global user.email "Your emailId" --> This command we have to run only once in the beginning so
+   that git can track which developer had made the changes.
+
+6. git config --global user.name "Your name" --> This command we have to run in order to provide our name from which 
+   git can track the changes made by you.
+
+7. git rm --cached <FileName> --> This command will help us to remove the file from the staging are and the 
+   file will go back to the untracked area.
+
+  Syntax --> git rm --cached <YourFileName>
+
+  example --> git rm --cached newtext.txt
+
+8. git branch -> This command will help us to see the branch generated once a first commit is made.
+
+ syntax --> git branch
+
+9. git remote add origin <YourRepoUrl> --> This command will create a connectivity between your local repo and
+   remote repo.
+
+  syntax--> git remote add origin <YourRepoUrl> 
+
+10 git fetch -v --> This command will show you the connectivity between local and remote repo.
+
+ Syntax --> git fetch -v
+
+11 git push --all --> This command will help us to push branches as well as files present inside the branches.
+
+ syntax --> git push --all
+
+12. git branch <NewbranchName> --> This command will help us to create new branch.
+
+ Syntax --> git branch <NewbranchName>
+  
+ Example --> git branch branch1
+
+13. git checkout <BranchName> --> This command will help us to switch between branches.
+
+  Syntax -->git checkout <BranchName>
+
+  Example --> git checkout branch1
+
+14. stash --> basically stashing is done when we want to hide a file for a specific duration of time or we are 
+
+ are temporarily hiding the file.
+
+14.1 git stash push -u <YourFileName> --> This command will hide the file will not be visible inside the 
+  untracked area .
+  
+ Syntax --> git stash push -u <FileName>
+
+ example --> git stash push -u demo1.txt
+
+15 git stash pop --> This command will help us to get back that file that we have stashed some time before.
+
+ Syntax --> git stash pop
+
+16 git pull origin master --> This command will help us to pull the new changes from remote repo to local repo
+
+  Syntax --> git pull origin <BranchName>
+
+  Example --> git pull origin master
+
+17 merge --> This feature of git will help us to merge the child branch into the master.
+
+17.1` git merge <branchname> --> this command will merge your branch into master branch.
+
+ Syntax -->git merge <branchname>
+
+ example --> git merge feature1
+
+18. git branch -m <oldBranchName> <newBranchname> --> This command will help you to rename a branch even 
+    if we are not standing on that branch.
+
+   syntax -->git branch -m <oldBranchName> <newBranchname>
+
+    Example --> git branch -m feature1 feature2
+
+18.1 git branch -m <newBranchname> --> This command will rename the current branch on which you are standing.
+
+Syntax --> git branch -m <newBranchname>
+ 
+Example --> git branch -m feature2. 
+
+19. git remote remove origin -> This command will allow us to connect to a diffent repo and after this
+   command we can again add a new origin.
+
+  Syntax --> git remote remove origin
+
+20 git log --> This command will help us to see the commits we have made untill now.
+
+  Syntax --> git log
+
+20.1 git log --oneline --> This command will show us the enite commit into one single line. This command we 
+ will be using when we have alot of commits.
+
+ syntax --> git log --oneline
+
+20.2 git log --graph --> This Command will show us the commits but in a graphical format.
+
+ syntax --> git log --graph 
+
+21. forking --> This is a feature of github with the help of which we can fork someone repo and we can make 
+    make changes and updation. we are basically creating the copy of the repo.
+
+
+22. git clone <Urlrepo> This command will help us to clone in someone repo.
+
+ syntax --> git clone <Urlrepo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

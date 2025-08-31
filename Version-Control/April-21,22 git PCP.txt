@@ -1,0 +1,201 @@
+-------------------------------------------------April-21 Git PCP ----------------------------------------------
+
+Personalized access token --> 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
+
+Assignment-1 
+
+    1 clear
+    2  sudo apt update
+    3  apt list --upgradable
+    4  clear
+    5  mkdir git1
+    6  ls
+    7  cd Git1
+    8  cd git1
+    9  touch Code.txt
+   10  ls
+   11  nano log.txt
+   12  ls
+   13  vi Output.txt
+   14  ls
+   15  git init
+   16  git add Code.txt
+   17  git add Output.txt
+   18  git status
+   19  git commit -m " I have commited two text file"
+   20  git remote add origin https://github.com/Parikh-786/April-21git.git
+   21  git branch
+   22  git push origin main
+   23  git push --all
+   24  history
+
+Assignment-2------------------------------------------------------------------------------------------
+
+   30  mkdir git2
+   31  ls
+   32  cd git2
+   33  git init
+   34  touch feature1.txt feature2.txt
+   35  ls
+   36  git branch
+   37  git add .
+   38  git commit -m "this commit is for feature 1 & 2 text files"
+   39  git statyus
+   40  git status
+   41  git branch develop
+   42  git branch feature1
+   43  git branch feature2
+   44  git branch
+   45  git switch develop
+   46  touch develop.txt
+   47  git status
+   48  git stash -u
+   49  git status
+   50  git checkout feature1
+   51  touch newe.txt
+   52  ls
+   53  git rm newe.txt
+   54  mv newe.txt new.txt
+   55  ls
+   56  git add .
+   57  git commit -m "2nd commit"
+   58  git checkout develop
+   59  git stash pop
+   60  git add .
+   61  git commit -m "3rd commit"
+   62  history
+
+Assignment-3------------------------------------------------------------------------------------------
+
+ cd git3
+   68  ls
+   69  git init
+   70  touvch main.txt
+   71  touch main.txt
+   72  ls
+   73  git add .
+   74  git commit -m "main.txt file commited"
+   75  ls
+   76  git branch
+   77  git branch develop
+   78  git branch F1
+   79  git branch F2
+   80  git branch 
+   81  git checkout develop
+   82  touch develop.txt
+   83  ls
+   84  git status
+   85  git add .
+   86  git commit -m "develop.txt file commited"
+   87  git checkout F1
+   88  touch f1.txt
+   89  ls
+   90  git status
+   91  git add .
+   92  git commit -m "f1.txt file is commited"
+   93  git checkout F2
+   94  ls
+   95  touch f2.txt
+   96  ls
+   97  git status
+   98  git add .
+   99  git commit -m "f2.txt file is commited"
+  100  gi remote add origin https://github.com/Parikh-786/April-21git.git
+  101  git remote add origin https://github.com/Parikh-786/April-21git.git
+  102  git remote add origin https://github.com/Parikh-786/Dec26_Git.git
+  103  git push --all
+  104  git branch
+  105  git branch -d F2
+  106  git checkout master
+  107  git branch -d F2
+  108  git branch -D F2
+  109  git branch
+  110  git push origin --delete develop (This command is told by "SATYAM")
+  111  git push origin --delete F1
+  112  history
+
+Assignment-4------------------------------------------------------------------------------------------
+
+ 115  mkdir git4
+  116  ls
+  117  cd git4
+  118  ls
+  119  git init
+  120  echo "This is a master file" > master.txt
+  121  ls
+  122  git status
+  123  git ad .
+  124  git add .
+  125  cat > file1.txt
+  126  ls
+  127  cat file1.txt
+  128  cat > file2.txt This is a new file 
+  129  cat > file2.txt " This is a new file"
+  130  cat > file2.txt 
+  131  ls
+  132  cat > file3.txt
+  133  ls
+  134  cat file3.txt
+  135  cat > file5.txt
+  136  ls
+  137  cat file5.txt
+  138  history
+  139  git status
+  140  ls
+  141  git rm file1.txt
+  142  git rm -r file1.txt
+  143  git rm --help
+  144  git rm -f file.txt
+  145  git rm -f file1.txt
+  146  git rm -f master.txt
+  147  ls
+  148  git add .
+  149  git rm *.txt
+  150  git rm -f *.txt
+  151  ls
+  152  touch master.txt
+  153  ls
+  154  git add .
+  155  git commit -m "another commit"
+  156  ls
+  157  git branch
+  158  git branch public1
+  159  git branch public2
+  160  git branch private
+  161  git branch 
+  162  git checkout public1
+  163  touch public1.txt
+  164  git add .
+  165  git commit -m "text file is commited"
+  166  git branch
+  167  git checkout master
+  168  ls
+  169  git merge public1
+  170  ls
+  171  git merge public2
+  172  git checkout private
+  173  ls
+  174  nano master.txt
+  175  git add .
+  176  git commit -m "edited the file"
+  177  git branch
+  178  git merge master
+  179  ls
+  180  cat master.txt
+  181  git checkout master
+  182  ls
+  183  cat master.txt
+  184  git merge private
+  185  cat master.txt
+  186  git chekout private
+  187  git checkout private
+  188  ls
+  189  git merge public1
+  190  git merge public2
+  191  git checkout public2
+  192  ls
+  193  git checkout private
+  194  ls
+  195  cat master.txt
+  196  git merge master
+  197  history

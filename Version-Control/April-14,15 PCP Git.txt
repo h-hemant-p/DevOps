@@ -1,0 +1,196 @@
+-----------------------------------------------April-14 Git PCP day-1-----------------------------------------
+
+Linux basics commands -->
+
+1.mkdir --> This command will help us to create a directory.
+
+Syntax --> mkdir <yourdirectoryname>
+
+example --> mkdir newfolkder
+
+2. ls --> This command will help you to list all the files as well as directories available.
+
+example --> ls
+
+2.1 ls -a --> This command is similar to ls but -a will list the hidden folders or files as well.
+
+example --> ls -a here -a is a flag for all the files.
+
+3. cd --> This command will help us to change from one directory to another.
+
+ syntax --> cd <directoryName>
+
+ example --> cd desktop
+
+ example --> cd documents
+
+3.1 cd ..  --> This command will help us to get back one directory.
+
+ example --> cd .. 
+
+ques --> There are total 5 directories one inside the other ?
+
+Ans --> here simply we will be using cd
+
+4 rmdir --> This command will help us to delete a particular directory.
+
+ syntax --> rmdir <directoryName>
+
+ example --> rmdir newfolder2
+
+5. pwd --> This command will show us the exact path where we are currently working.pwd stands for present
+   working directory.
+
+example --> pwd 
+
+6. touch --> This command will help us to create an empty file.
+
+ syntax --> touch <fileName>
+
+ example --> touch file1.txt
+
+7. cat --> This command will help us to see the content inside any particular file.
+
+ syntax --> cat <YourfileName>
+
+ example --> cat file1.txt
+
+---------------------------------------------- April-15 Git PCP day-2-----------------------------------
+
+8.How to create text based files ?
+
+ There are multiple ways to create text based files.
+
+8.1 nano editor--> nano is basically a linux based editor with the help of which we can create,modify and
+    update text files.
+
+  syntax --> nano <YourFileName>
+
+  example --> nano file2.txt
+
+# how to save and exit from nano editor -->
+ 
+ To save --> ctrl + s
+ To exit --> ctrl + x
+
+8.2 vi editor --> vi is another type of editor available with the help of which we can edit the files.
+
+ Syntax --> vi <fileName>
+
+ example --> vi demo.txt
+
+# how to go & exit from the insert mode in vi editor-->
+
+ To insert --> I
+ To  exit from insert mode --> Esc
+
+# How to save and quit from vi editor-->
+  :wq --> here w is to write/save the data and q means to quit from the editor.
+
+9. echo --> This command is used for multiple purposes basically we can print the exact data as well as
+ we can create text based files with this command.
+
+ syntax --> echo "string..." 
+
+ example --> echo 'hello everyone'
+
+9.1 how to create empty/ text files with echo command-->
+
+   example --> echo "" > newfile.txt  (This will create an empty file)
+   
+   example --> echo "This is a text file" > demo2.txt
+
+
+Git and Github basics + Theory -->
+
+1. What is git ?
+
+* VCS -> it stands for version control system and it is a tool that will help the developers to manage
+ the changes in the source code of the project over the period of time.
+
+* With the help of VCS we can track the changes(previous versions) in the source code.
+
+* With the help of VCS we can easily share our source code with annyone.
+
+* With the help of VCS tools we can work collaborativly.
+
+* VCS track modifications or updatiosn and it also provide the history of previous versions.
+
+2. Types of VCS --> 
+
+2.1 Local version control system (LVCS) -->
+
+ # This kind of VCS will store the changs on a local machine.
+
+ example --> RCS ( revision control system)
+
+2.2 centralized version control system (CVCS)-->
+
+* In this type of VCS all the files or data is stored inside a ceantral server.
+
+* developers need active internet in order to access the data from the centralized server.
+
+2.3 Distibuted version conbtrol system (DVCS) -->
+
+* In DVCS every developer has a full copy of the repository.
+
+* In this kind of version control system it allows the developers to work in offline mode.
+
+# this kind of vcs provides better backup options.
+
+Example --> git, Mercurial
+
+3. features of git-->
+
+3.1 fast & lightweight -->
+
+# git is a light weight and easy to use tool as it provides high performance.
+
+3.2 Collaboration -->
+
+# Git helps us to collaborate with other developers as well.
+
+3.3 OpenSource -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
