@@ -1,6 +1,5 @@
 -------------------------------------------------April-21 Git PCP ----------------------------------------------
 
-Personalized access token --> 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
 
 Assignment-1 
 
